@@ -1,0 +1,20 @@
+{
+  "foods": [
+    {
+      "image": "https://media.istockphoto.com/photos/bowl-dish-with-brown-rice-cucumber-tomato-green-peas-red-cabbage-picture-id1047798504?s=170667a",
+      "name": "Misturebinha",
+      "price": "20.00",
+      "description": "Prato teste",
+      "available": false,
+      "id": 8
+    },
+    {
+      "image": "",
+      "name": "333333333",
+      "price": "20.02220",
+      "description": "76766662",
+      "available": true,
+      "id": 9
+    }
+  ]
+}
