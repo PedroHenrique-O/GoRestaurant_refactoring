@@ -2,8 +2,24 @@ import { useState } from "react";
 import { FiEdit3, FiTrash } from "react-icons/fi";
 import { Container } from "./styles";
 import api from "../../services/api";
+import FoodProps from "../../Types/FoodProps";
 
-function Food({ food, handleDelete, handleEditFood }) {
+export interface IFood {
+  food: {
+    id: number;
+    name: string;
+    image: string;
+    price: string;
+    available: boolean;
+    description: string;
+  };
+
+  handleDelete: (food: number) => void;
+  handleEditFood: (food: FoodProps) => void;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-redeclare
+function Food({ food, handleDelete, handleEditFood }: IFood) {
   const [isAvailable, setIsAvailable] = useState(food.available);
 
   const toggleAvailable = async () => {

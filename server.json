@@ -1,20 +1,36 @@
 {
   "foods": [
     {
-      "image": "https://media.istockphoto.com/photos/bowl-dish-with-brown-rice-cucumber-tomato-green-peas-red-cabbage-picture-id1047798504?s=170667a",
-      "name": "Misturebinha",
-      "price": "20.00",
-      "description": "Prato teste",
-      "available": false,
-      "id": 8
+      "image": "",
+      "name": "22222",
+      "price": "22222",
+      "description": "22222",
+      "available": true,
+      "id": 1
     },
     {
       "image": "",
-      "name": "333333333",
-      "price": "20.02220",
-      "description": "76766662",
+      "name": "",
+      "price": "",
+      "description": "",
       "available": true,
-      "id": 9
+      "id": 2
+    },
+    {
+      "image": "",
+      "name": "22222",
+      "price": "1111",
+      "description": "22222",
+      "available": true,
+      "id": 3
+    },
+    {
+      "image": "",
+      "name": "Comida boa",
+      "price": "3030",
+      "description": "impala",
+      "available": true,
+      "id": 4
     }
   ]
 }

@@ -5,11 +5,12 @@ import ModalAddFood from "../../components/ModalAddFood";
 import ModalEditFood from "../../components/ModalEditFood";
 import { FoodsContainer } from "./styles";
 import { useState, useEffect } from "react";
+import FoodProps from "../../Types/FoodProps";
 
 function Dashboard() {
-  const [foods, setFoods] = useState([]);
-  const [editingFood, setEditingFood] = useState({});
-  console.log("editingFood", editingFood);
+  const [foods, setFoods] = useState<FoodProps[]>([]);
+  const [editingFood, setEditingFood] = useState<FoodProps>();
+
   const [modalOpen, setModalOpen] = useState(false);
   const [editModalOpen, setEditModalOpen] = useState(false);
 
@@ -25,7 +26,7 @@ function Dashboard() {
     getFood();
   }, []);
 
-  const handleAddFood = async (food) => {
+  const handleAddFood = async (food: FoodProps) => {
     //food é adicionado ao back-end junto com o available setado
     try {
       const response = await api.post("/foods", {
@@ -40,11 +41,11 @@ function Dashboard() {
     }
   };
 
-  const handleUpdateFood = async (food) => {
+  const handleUpdateFood = async (food: FoodProps) => {
     try {
       //aqui damos um put na rota foods/id
       //mandamos o food editado os prevStates
-      const foodUpdated = await api.put(`/foods/${editingFood.id}`, {
+      const foodUpdated = await api.put(`/foods/${editingFood?.id}`, {
         ...editingFood,
         ...food,
       });
@@ -54,7 +55,7 @@ function Dashboard() {
       //se o id do state não bater com o id do update, então:
       //retornamos o prevState, se sim o updated
 
-      const foodsUpdated = foods.map((food) =>
+      const foodsUpdated = foods.map((food: FoodProps) =>
         food.id !== foodUpdated.data.id ? food : foodUpdated.data
       );
 
@@ -64,7 +65,7 @@ function Dashboard() {
     }
   };
 
-  const handleDeleteFood = async (id) => {
+  const handleDeleteFood = async (id: number) => {
     await api.delete(`/foods/${id}`);
 
     //se o food.id do state, for diferente do id do argumento
@@ -84,7 +85,7 @@ function Dashboard() {
     setEditModalOpen(!editModalOpen);
   };
 
-  const handleEditFood = (food) => {
+  const handleEditFood = (food: FoodProps) => {
     console.log("handleEditFood", food);
 
     setEditingFood(food);
