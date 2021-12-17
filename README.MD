@@ -8,7 +8,7 @@
 
 <h1>About the application: </h1>
 
-<p> GoRestaurante foi o desafio obrigatório proposto durante o bootcamp da @Rocketseat. Realizei a refatoração completa da aplicação de ClassComponents para Function Components, e também realizei a conversão de JavaScript para TypeScript.  </p>
+<p> GoRestaurante é um desafio obrigatório que foi realizado durante o bootcamp ignite da @Rocketseat.  Realizei a refatoração completa da aplicação de JavaScript + ClassComponents para TypeScript + Function Components.   </p>
 
 <h1> How to install </h1>
 
