@@ -1,36 +1,12 @@
 {
   "foods": [
     {
-      "image": "",
-      "name": "22222",
-      "price": "22222",
-      "description": "22222",
-      "available": true,
-      "id": 1
-    },
-    {
-      "image": "",
-      "name": "",
-      "price": "",
-      "description": "",
-      "available": true,
+      "image": "https://www.greencore.com/wp-content/uploads/2015/08/QuicheSpread-250x250.jpg",
+      "name": "Torta caseira",
+      "price": "20.20",
+      "description": "Torta de frango.",
+      "available": false,
       "id": 2
-    },
-    {
-      "image": "",
-      "name": "22222",
-      "price": "1111",
-      "description": "22222",
-      "available": true,
-      "id": 3
-    },
-    {
-      "image": "",
-      "name": "Comida boa",
-      "price": "3030",
-      "description": "impala",
-      "available": true,
-      "id": 4
     }
   ]
 }
