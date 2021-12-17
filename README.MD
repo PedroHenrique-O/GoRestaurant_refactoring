@@ -12,4 +12,4 @@
 
 <h1> How to install </h1>
 
-<p> Use o comando yarn ou npm install para instalar as dependências do projeto, e  ``` yarn server  ``` para rodar o Json Server e   ``` yarn start  ``` para rodar a aplicação </p>
+<p> Use o comando yarn ou npm install para instalar as dependências do projeto, e yarn server para rodar o Json Server e yarn start  para rodar a aplicação </p>
